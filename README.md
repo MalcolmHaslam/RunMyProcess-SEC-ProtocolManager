@@ -4,7 +4,8 @@ The SEC Protocol Manager is part of the "Secure Enterprise Connector" (SEC) buil
 The "SEC Protocol Manager" manages data received from the "Data Connector Agent" and determines which adapter it must forward the information too. The "SEC Protocol Manager" also keeps a registry of all adapters and regularly checks the health of each adapter to ensure it is running smoothly.
 
 
-As  02/10/2013, the SEC Protocol Manager has only bean tested with jetty 7 standalone. It's basically a java servlet that runs with the help of the [SEC-SDK](https://github.com/MalcolmHaslam/RunMyProcess-SEC-SDK).
+As  02/10/2013, the SEC Protocol Manager has only bean tested with jetty 7 standalone. It's basically a java servlet that runs with the help of the SEC-SDK. The pom.xml dependency for the sdk ussualy point to the current development sdk. you should modify this dependency to point to the latest stable version of the SEC-SDK that can be found in [here](https://github.com/MalcolmHaslam/RunMyProcess-SEC-SDK).
+
 
 Install and run suggestion
 ---------------------------
@@ -22,7 +23,7 @@ When jetty is running you can test the Manager by navigating on your browser to 
  
   The SEC-Protocol Manager is running! Registered Protocols [protocols registered in the Manager]
  
-The Guts
+How it Works
 -------
 -------
 As it was mentioned before the Manager is a JAVA Servlet that listens to a port for GETs and POSTs.

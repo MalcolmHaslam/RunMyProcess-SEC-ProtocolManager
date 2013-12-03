@@ -13,7 +13,7 @@ Install and run suggestion
 
 1- Download jetty 7 standalone
 
-2- Download the project and run mvn clean install
+2- Download the project and run mvn clean install to generate the war file with all dependencies
 
 3- copy the generated war file in the jetty webapps folder
 
